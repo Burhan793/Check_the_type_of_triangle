@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	cout<<"Enter the first side of triangle ";
+	cin>>a;
+	cout<<"Enter the second side of triangle ";
+	cin>>b;
+	cout<<"Enter the third side of triangle ";
+	cin>>c;
+	if(a==b && b==c){
+		cout<<"This is an eqvilateral triangle."<<endl;
+	}
+		else if(a==b && b!=c || a==c && c!=b || b==c && c!=a){
+		cout<<"This is an isosceles triangle."<<endl;
+	}
+	else if(a!=b && b!=c){
+		cout<<"This is a scalene triangle."<<endl;
+	}
+	if((a*a==b*b+c*c) || (b*b==a*a+c*c) || (c*c==a*a+b*b)){
+		cout<<"This is a right angled triangle."<<endl;
+	}
+}
